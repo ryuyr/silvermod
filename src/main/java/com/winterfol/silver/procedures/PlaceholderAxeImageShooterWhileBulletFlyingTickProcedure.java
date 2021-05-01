@@ -50,7 +50,7 @@ public class PlaceholderAxeImageShooterWhileBulletFlyingTickProcedure extends Si
 		IWorld world = (IWorld) dependencies.get("world");
 		double time = 0;
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.ENCHANTED_HIT, x, y, z, (int) 1, 1, 1, 1, 0);
+			((ServerWorld) world).spawnParticle(ParticleTypes.ENCHANTED_HIT, x, y, z, (int) 1, 0.5, 0.5, 0.5, 0);
 		}
 		time = (double) ((time) + 18);
 		entity.rotationYaw = (float) (0);

@@ -135,6 +135,6 @@ public class ForsakenPillarsBiome extends SilverModElements.ModElement {
 				BiomeDictionary.Type.HILLS, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.DENSE, BiomeDictionary.Type.MAGICAL,
 				BiomeDictionary.Type.OVERWORLD);
 		BiomeManager.addBiome(BiomeManager.BiomeType.COOL,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 10));
+				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 5));
 	}
 }
