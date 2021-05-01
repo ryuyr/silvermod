@@ -3,6 +3,8 @@ package com.winterfol.silver.enchantment;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.enchantment.Enchantment;
@@ -34,6 +36,23 @@ public class CasterImageEnchantment extends SilverModElements.ModElement {
 		@Override
 		public int getMaxLevel() {
 			return 3;
+		}
+
+		@Override
+		public boolean canApplyAtEnchantingTable(ItemStack stack) {
+			if (stack.getItem() == new ItemStack(Items.WOODEN_AXE, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.STONE_AXE, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.IRON_AXE, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.GOLDEN_AXE, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.DIAMOND_AXE, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.NETHERITE_AXE, (int) (1)).getItem())
+				return true;
+			return false;
 		}
 
 		@Override

@@ -23,22 +23,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -93,6 +77,86 @@
           }
         ]
       }
+    },
+    {
+      "name": "PlaceholderAxeImageShooter",
+      "type": "gun",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholder_axe_image_shooter"
+    },
+    {
+      "name": "PlaceholderAxeImageShooterWhileBulletFlyingTick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholder_axe_image_shooter_while_bullet_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlaceholderSwordImageShooter",
+      "type": "gun",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholder_sword_image_shooter"
+    },
+    {
+      "name": "PlaceholderSwordImageShooterWhileBulletFlyingTick",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholder_sword_image_shooter_while_bullet_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -125,11 +189,13 @@
   "language_map": {
     "en_us": {
       "subtitles.loz_sword_shoot_low": "Axe Image Fired",
+      "item.silver.placeholder_sword_image_shooter": "Placeholder Sword Image Shooter",
       "subtitles.ominousdrone": "I can see you... :)",
       "biome.silver.forsaken_pillars": "Forsaken Pillars",
       "subtitles.creepygiggle": "giggles",
       "enchantment.silver.caster_image": "Caster Image",
-      "subtitles.loz_sword_shoot": "Image Fired"
+      "subtitles.loz_sword_shoot": "Image Fired",
+      "item.silver.placeholder_axe_image_shooter": "Placeholder Axe Image Shooter"
     }
   },
   "foldersRoot": {

@@ -1,0 +1,40 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "placeholderaxe",
+    "customModelName": "Normal",
+    "name": "Placeholder Axe Image Shooter",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "CUSTOM:loz_sword_shoot_low"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.5,
+    "bulletDamage": 7.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelaxeimage",
+    "customBulletModelTexture": "axeimage.png",
+    "onBulletFlyingTick": {
+      "name": "PlaceholderAxeImageShooterWhileBulletFlyingTick"
+    }
+  }
+}

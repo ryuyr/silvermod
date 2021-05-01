@@ -1,8 +1,10 @@
 {
   "subtitles.loz_sword_shoot_low": "Axe Image Fired",
+  "item.silver.placeholder_sword_image_shooter": "Placeholder Sword Image Shooter",
   "subtitles.ominousdrone": "I can see you... :)",
   "biome.silver.forsaken_pillars": "Forsaken Pillars",
   "subtitles.creepygiggle": "giggles",
   "enchantment.silver.caster_image": "Caster Image",
-  "subtitles.loz_sword_shoot": "Image Fired"
+  "subtitles.loz_sword_shoot": "Image Fired",
+  "item.silver.placeholder_axe_image_shooter": "Placeholder Axe Image Shooter"
 }

@@ -9,7 +9,26 @@
     "maxLevel": 3,
     "damageModifier": 0,
     "compatibleEnchantments": [],
-    "compatibleItems": [],
+    "compatibleItems": [
+      {
+        "value": "Items.WOODEN_AXE"
+      },
+      {
+        "value": "Items.STONE_AXE"
+      },
+      {
+        "value": "Items.IRON_AXE"
+      },
+      {
+        "value": "Items.GOLDEN_AXE"
+      },
+      {
+        "value": "Items.DIAMOND_AXE"
+      },
+      {
+        "value": "Items.NETHERITE_AXE"
+      }
+    ],
     "isTreasureEnchantment": false,
     "isCurse": false,
     "isAllowedOnBooks": true
