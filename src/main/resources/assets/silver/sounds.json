@@ -1,0 +1,32 @@
+{
+  "ominousdrone": {
+    "category": "ambient",
+    "subtitle": "subtitles.ominousdrone",
+    "sounds": [
+      {
+        "name": "silver:ominousdrone",
+        "stream": false
+      }
+    ]
+  },
+  "loz_sword_shoot": {
+    "category": "player",
+    "subtitle": "subtitles.loz_sword_shoot",
+    "sounds": [
+      {
+        "name": "silver:loz_sword_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "loz_sword_shoot_low": {
+    "category": "player",
+    "subtitle": "subtitles.loz_sword_shoot_low",
+    "sounds": [
+      {
+        "name": "silver:loz_sword_shoot_low",
+        "stream": false
+      }
+    ]
+  }
+}

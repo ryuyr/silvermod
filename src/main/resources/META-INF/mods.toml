@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Do whatever the fuck you want (tm)"
+
+[[mods]]
+modId="silver"
+version="0.1"
+displayName="Silver"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="winterfol"
+description='''
+A mod with a few features that comply with other mods.
+'''
+
+[[dependencies.silver]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

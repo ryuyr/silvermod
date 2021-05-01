@@ -1,0 +1,157 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "CasterImage",
+      "type": "enchantment",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "caster_image"
+    },
+    {
+      "name": "EnchantmentCasterImage",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchantment_caster_image",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ForsakenPillars",
+      "type": "biome",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "forsaken_pillars"
+    },
+    {
+      "name": "ForsakenPillar",
+      "type": "structure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "forsaken_pillar"
+    },
+    {
+      "name": "EnchantmentCasterImageDisarm",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchantment_caster_image_disarm",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "ominousdrone",
+      "files": [
+        "ominousdrone"
+      ],
+      "category": "ambient",
+      "subtitle": "I can see you... :)"
+    },
+    {
+      "name": "loz_sword_shoot",
+      "files": [
+        "loz_sword_shoot"
+      ],
+      "category": "player",
+      "subtitle": "Image Fired"
+    },
+    {
+      "name": "loz_sword_shoot_low",
+      "files": [
+        "loz_sword_shoot_low"
+      ],
+      "category": "player",
+      "subtitle": "Axe Image Fired"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.loz_sword_shoot_low": "Axe Image Fired",
+      "subtitles.ominousdrone": "I can see you... :)",
+      "biome.silver.forsaken_pillars": "Forsaken Pillars",
+      "subtitles.creepygiggle": "giggles",
+      "enchantment.silver.caster_image": "Caster Image",
+      "subtitles.loz_sword_shoot": "Image Fired"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "silver",
+    "modName": "Silver",
+    "version": "0.1",
+    "description": "A mod with a few features that comply with other mods.",
+    "author": "winterfol",
+    "license": "Do whatever the fuck you want (tm)",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "com.winterfol.silver",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100116710
+}
