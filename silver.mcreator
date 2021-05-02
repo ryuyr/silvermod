@@ -83,7 +83,7 @@
       "type": "gun",
       "sortid": 8,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "placeholder_axe_image_shooter"
     },
@@ -97,10 +97,6 @@
       "registry_name": "placeholder_axe_image_shooter_while_bullet_flying_tick",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -125,7 +121,7 @@
       "type": "gun",
       "sortid": 10,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "placeholder_sword_image_shooter"
     },
@@ -139,6 +135,61 @@
       "registry_name": "placeholder_sword_image_shooter_while_bullet_flying_tick",
       "metadata": {
         "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EndBreaker",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_breaker"
+    },
+    {
+      "name": "Singularity",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "singularity"
+    },
+    {
+      "name": "EndBreakerEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_breaker_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
           {
             "name": "x",
             "type": "number"
@@ -190,8 +241,10 @@
     "en_us": {
       "subtitles.loz_sword_shoot_low": "Axe Image Fired",
       "item.silver.placeholder_sword_image_shooter": "Placeholder Sword Image Shooter",
+      "item.silver.end_breaker": "End Breaker",
       "subtitles.ominousdrone": "I can see you... :)",
       "biome.silver.forsaken_pillars": "Forsaken Pillars",
+      "block.silver.singularity": "Singularity",
       "subtitles.creepygiggle": "giggles",
       "enchantment.silver.caster_image": "Caster Image",
       "subtitles.loz_sword_shoot": "Image Fired",

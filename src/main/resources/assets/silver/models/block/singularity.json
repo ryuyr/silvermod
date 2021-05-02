@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "silver:blocks/singularity",
+    "up": "silver:blocks/singularity",
+    "north": "silver:blocks/singularity",
+    "east": "silver:blocks/singularity",
+    "south": "silver:blocks/singularity",
+    "west": "silver:blocks/singularity",
+    "particle": "silver:blocks/singularity"
+  }
+}

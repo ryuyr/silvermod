@@ -5,6 +5,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.IWorld;
+import net.minecraft.util.Hand;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.AxeItem;
 import net.minecraft.entity.player.PlayerEntity;
@@ -38,8 +39,30 @@ public class EnchantmentCasterImageProcedure extends SilverModElements.ModElemen
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack iteminhand = ItemStack.EMPTY;
 		iteminhand = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
-		if (((EnchantmentHelper.getEnchantmentLevel(CasterImageEnchantment.enchantment, (iteminhand)) != 0))) {
+		if ((((EnchantmentHelper.getEnchantmentLevel(CasterImageEnchantment.enchantment, (iteminhand)) != 0))
+				&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem() == (ItemStack.EMPTY)
+						.getItem()))) {
 			if (((iteminhand).getItem() instanceof AxeItem)) {
+				if (entity instanceof PlayerEntity)
+					((PlayerEntity) entity).getCooldownTracker().setCooldown(((iteminhand)).getItem(),
+							(int) (80 - ((EnchantmentHelper.getEnchantmentLevel(CasterImageEnchantment.enchantment, (iteminhand))) * 20)));
+				{
+					ItemStack _ist = (iteminhand);
+					if (_ist.attemptDamageItem((int) 2, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamage(0);
+					}
+				}
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+				}
+				if (entity instanceof LivingEntity) {
+					Entity _ent = entity;
+					if (!_ent.world.isRemote()) {
+						PlaceholderAxeImageShooterItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 0.5, (float) 7, (int) 5);
+					}
+				}
+			} else {
 				if (entity instanceof PlayerEntity)
 					((PlayerEntity) entity).getCooldownTracker().setCooldown(((iteminhand)).getItem(),
 							(int) (60 - ((EnchantmentHelper.getEnchantmentLevel(CasterImageEnchantment.enchantment, (iteminhand))) * 15)));
@@ -51,21 +74,7 @@ public class EnchantmentCasterImageProcedure extends SilverModElements.ModElemen
 					}
 				}
 				if (entity instanceof LivingEntity) {
-					Entity _ent = entity;
-					if (!_ent.world.isRemote()) {
-						PlaceholderAxeImageShooterItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 0.5, (float) 7, (int) 5);
-					}
-				}
-			} else {
-				if (entity instanceof PlayerEntity)
-					((PlayerEntity) entity).getCooldownTracker().setCooldown(((iteminhand)).getItem(),
-							(int) (30 - ((EnchantmentHelper.getEnchantmentLevel(CasterImageEnchantment.enchantment, (iteminhand))) * 7.5)));
-				{
-					ItemStack _ist = (iteminhand);
-					if (_ist.attemptDamageItem((int) 2, new Random(), null)) {
-						_ist.shrink(1);
-						_ist.setDamage(0);
-					}
+					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
 				}
 				if (entity instanceof LivingEntity) {
 					Entity _ent = entity;

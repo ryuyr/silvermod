@@ -1,0 +1,34 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "end_breaker",
+    "customModelName": "Normal",
+    "name": "End Breaker",
+    "specialInfo": [
+      "§7On right click: Immediately mines any block.",
+      "§7This includes bedrock.",
+      "§7“It can break anything - especially the game!”"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 5,
+    "damageVsEntity": 0.0,
+    "usageCount": 512,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "EndBreakerEntitySwingsItem"
+    }
+  }
+}

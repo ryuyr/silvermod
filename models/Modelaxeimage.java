@@ -10,12 +10,19 @@ public static class Modelaxeimage extends EntityModel<Entity> {
 		textureHeight = 16;
 
 		bb_main = new ModelRenderer(this);
-		bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
+		bb_main.setRotationPoint(-8.0F, 19.0F, 0.0F);
+		setRotationAngle(bb_main, 0.0F, 0.0F, 1.5708F);
 		bb_main.setTextureOffset(0, 0).addBox(-1.0F, -16.0F, 0.0F, 1.0F, 16.0F, 1.0F, 0.0F, false);
 		bb_main.setTextureOffset(0, 0).addBox(-7.0F, -15.0F, 0.0F, 1.0F, 7.0F, 1.0F, 0.0F, false);
 		bb_main.setTextureOffset(0, 0).addBox(-1.0F, -14.0F, -1.0F, 1.0F, 4.0F, 3.0F, 0.0F, false);
 		bb_main.setTextureOffset(0, 0).addBox(-6.0F, -14.0F, 0.0F, 7.0F, 4.0F, 1.0F, 0.0F, false);
 		bb_main.setTextureOffset(0, 0).addBox(1.0F, -14.0F, 0.0F, 4.0F, 2.0F, 1.0F, 0.0F, false);
+	}
+
+	@Override
+	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks,
+			float netHeadYaw, float headPitch) {
+		// previously the render function, render code was moved to a method below
 	}
 
 	@Override
@@ -28,9 +35,5 @@ public static class Modelaxeimage extends EntityModel<Entity> {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
-	}
-
-	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
-		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 	}
 }
