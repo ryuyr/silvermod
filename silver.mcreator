@@ -208,6 +208,61 @@
           }
         ]
       }
+    },
+    {
+      "name": "PencilBlade",
+      "type": "tool",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pencil_blade"
+    },
+    {
+      "name": "PencilBladeCrafting",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pencil_blade_crafting"
+    },
+    {
+      "name": "PencilBladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pencil_blade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -248,6 +303,7 @@
       "subtitles.creepygiggle": "giggles",
       "enchantment.silver.caster_image": "Caster Image",
       "subtitles.loz_sword_shoot": "Image Fired",
+      "item.silver.pencil_blade": "Pencil Blade",
       "item.silver.placeholder_axe_image_shooter": "Placeholder Axe Image Shooter"
     }
   },
@@ -272,5 +328,5 @@
     "modElementsPackage": "com.winterfol.silver",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100116710
+  "mcreatorVersion": 202100118117
 }
