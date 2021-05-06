@@ -52,6 +52,18 @@ public class CasterImageEnchantment extends SilverModElements.ModElement {
 				return true;
 			if (stack.getItem() == new ItemStack(Items.NETHERITE_AXE, (int) (1)).getItem())
 				return true;
+			if (stack.getItem() == new ItemStack(Items.WOODEN_SWORD, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.STONE_SWORD, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.IRON_SWORD, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.GOLDEN_SWORD, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.DIAMOND_SWORD, (int) (1)).getItem())
+				return true;
+			if (stack.getItem() == new ItemStack(Items.NETHERITE_SWORD, (int) (1)).getItem())
+				return true;
 			return false;
 		}
 

@@ -45,7 +45,7 @@ public class EnchantmentCasterImageProcedure extends SilverModElements.ModElemen
 			if (((iteminhand).getItem() instanceof AxeItem)) {
 				if (entity instanceof PlayerEntity)
 					((PlayerEntity) entity).getCooldownTracker().setCooldown(((iteminhand)).getItem(),
-							(int) (80 - ((EnchantmentHelper.getEnchantmentLevel(CasterImageEnchantment.enchantment, (iteminhand))) * 20)));
+							(int) (80 - ((EnchantmentHelper.getEnchantmentLevel(CasterImageEnchantment.enchantment, (iteminhand))) * 15)));
 				{
 					ItemStack _ist = (iteminhand);
 					if (_ist.attemptDamageItem((int) 2, new Random(), null)) {
@@ -59,7 +59,7 @@ public class EnchantmentCasterImageProcedure extends SilverModElements.ModElemen
 				if (entity instanceof LivingEntity) {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote()) {
-						PlaceholderAxeImageShooterItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 0.5, (float) 7, (int) 5);
+						PlaceholderAxeImageShooterItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 0.5, (float) 11, (int) 5);
 					}
 				}
 			} else {

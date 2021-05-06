@@ -28,24 +28,6 @@
       }
     },
     {
-      "name": "ForsakenPillars",
-      "type": "biome",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "forsaken_pillars"
-    },
-    {
-      "name": "ForsakenPillar",
-      "type": "structure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "forsaken_pillar"
-    },
-    {
       "name": "EnchantmentCasterImageDisarm",
       "type": "procedure",
       "sortid": 7,
@@ -98,6 +80,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -136,6 +122,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -164,15 +154,6 @@
       "registry_name": "end_breaker"
     },
     {
-      "name": "Singularity",
-      "type": "block",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "singularity"
-    },
-    {
       "name": "EndBreakerEntitySwingsItem",
       "type": "procedure",
       "sortid": 13,
@@ -189,18 +170,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -263,6 +232,65 @@
           }
         ]
       }
+    },
+    {
+      "name": "Repeating",
+      "type": "enchantment",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "repeating"
+    },
+    {
+      "name": "EnchantmentRepeating",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchantment_repeating",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnchanterCasterImageAxeExplosion",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchanter_caster_image_axe_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -298,12 +326,11 @@
       "item.silver.placeholder_sword_image_shooter": "Placeholder Sword Image Shooter",
       "item.silver.end_breaker": "End Breaker",
       "subtitles.ominousdrone": "I can see you... :)",
-      "biome.silver.forsaken_pillars": "Forsaken Pillars",
-      "block.silver.singularity": "Singularity",
       "subtitles.creepygiggle": "giggles",
       "enchantment.silver.caster_image": "Caster Image",
       "subtitles.loz_sword_shoot": "Image Fired",
       "item.silver.pencil_blade": "Pencil Blade",
+      "enchantment.silver.repeating": "Repeating",
       "item.silver.placeholder_axe_image_shooter": "Placeholder Axe Image Shooter"
     }
   },

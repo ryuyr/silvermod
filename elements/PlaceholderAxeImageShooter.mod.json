@@ -17,7 +17,7 @@
     "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
-      "value": "CUSTOM:loz_sword_shoot_low"
+      "value": "entity.ghast.shoot"
     },
     "hasGlow": false,
     "animation": "bow",
@@ -33,6 +33,9 @@
     },
     "bulletModel": "Modelaxeimage",
     "customBulletModelTexture": "axeimage.png",
+    "onBulletHitsEntity": {
+      "name": "EnchanterCasterImageAxeExplosion"
+    },
     "onBulletFlyingTick": {
       "name": "PlaceholderAxeImageShooterWhileBulletFlyingTick"
     }

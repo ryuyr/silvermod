@@ -1,0 +1,54 @@
+
+package com.winterfol.silver.enchantment;
+
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.enchantment.Enchantment;
+
+import com.winterfol.silver.SilverModElements;
+
+@SilverModElements.ModElement.Tag
+public class RepeatingEnchantment extends SilverModElements.ModElement {
+	@ObjectHolder("silver:repeating")
+	public static final Enchantment enchantment = null;
+	public RepeatingEnchantment(SilverModElements instance) {
+		super(instance, 16);
+	}
+
+	@Override
+	public void initElements() {
+		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("repeating"));
+	}
+	public static class CustomEnchantment extends Enchantment {
+		public CustomEnchantment(EquipmentSlotType... slots) {
+			super(Enchantment.Rarity.RARE, EnchantmentType.CROSSBOW, slots);
+		}
+
+		@Override
+		public int getMinLevel() {
+			return 1;
+		}
+
+		@Override
+		public int getMaxLevel() {
+			return 1;
+		}
+
+		@Override
+		public boolean isTreasureEnchantment() {
+			return false;
+		}
+
+		@Override
+		public boolean isCurse() {
+			return false;
+		}
+
+		@Override
+		public boolean isAllowedOnBooks() {
+			return true;
+		}
+	}
+}
