@@ -1,12 +1,15 @@
 {
+  "item.silver.crystrite": "Crystrite",
+  "item.silver.crystrite_sword": "Crystrite Sword",
   "subtitles.loz_sword_shoot_low": "Axe Image Fired",
+  "subtitles.creepygiggle": "giggles",
+  "enchantment.silver.caster_image": "Caster Image",
+  "block.silver.crystrite_ore": "Crystrite Ore",
+  "item.silver.pencil_blade": "Pencil Blade",
+  "item.silver.placeholder_axe_image_shooter": "Placeholder Axe Image Shooter",
+  "item.silver.crystrite_axe": "Crystrite Axe",
   "item.silver.placeholder_sword_image_shooter": "Placeholder Sword Image Shooter",
   "item.silver.end_breaker": "End Breaker",
   "subtitles.ominousdrone": "I can see you... :)",
-  "subtitles.creepygiggle": "giggles",
-  "enchantment.silver.caster_image": "Caster Image",
-  "subtitles.loz_sword_shoot": "Image Fired",
-  "item.silver.pencil_blade": "Pencil Blade",
-  "enchantment.silver.repeating": "Repeating",
-  "item.silver.placeholder_axe_image_shooter": "Placeholder Axe Image Shooter"
+  "subtitles.loz_sword_shoot": "Image Fired"
 }

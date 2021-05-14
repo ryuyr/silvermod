@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "silver:blocks/crystrite_ore",
+    "up": "silver:blocks/crystrite_ore",
+    "north": "silver:blocks/crystrite_ore",
+    "east": "silver:blocks/crystrite_ore",
+    "south": "silver:blocks/crystrite_ore",
+    "west": "silver:blocks/crystrite_ore",
+    "particle": "silver:blocks/crystrite_ore"
+  }
+}

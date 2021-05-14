@@ -234,32 +234,6 @@
       }
     },
     {
-      "name": "Repeating",
-      "type": "enchantment",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "repeating"
-    },
-    {
-      "name": "EnchantmentRepeating",
-      "type": "procedure",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "enchantment_repeating",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "EnchanterCasterImageAxeExplosion",
       "type": "procedure",
       "sortid": 18,
@@ -291,6 +265,127 @@
           }
         ]
       }
+    },
+    {
+      "name": "EndBreakerLoottable",
+      "type": "loottable",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_breaker_loottable"
+    },
+    {
+      "name": "CrystriteOre",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystrite_ore"
+    },
+    {
+      "name": "Crystrite",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystrite"
+    },
+    {
+      "name": "CrystriteSword",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystrite_sword"
+    },
+    {
+      "name": "CrystriteSwordRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystrite_sword_recipe"
+    },
+    {
+      "name": "CrystriteOrePlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystrite_ore_player_starts_to_destroy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrystriteOreUpdateTick",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystrite_ore_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrystriteAxe",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystrite_axe"
+    },
+    {
+      "name": "CrystriteAxeRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystrite_axe_recipe"
     }
   ],
   "variable_elements": [],
@@ -322,16 +417,19 @@
   ],
   "language_map": {
     "en_us": {
+      "item.silver.crystrite": "Crystrite",
+      "item.silver.crystrite_sword": "Crystrite Sword",
       "subtitles.loz_sword_shoot_low": "Axe Image Fired",
+      "subtitles.creepygiggle": "giggles",
+      "enchantment.silver.caster_image": "Caster Image",
+      "block.silver.crystrite_ore": "Crystrite Ore",
+      "item.silver.pencil_blade": "Pencil Blade",
+      "item.silver.placeholder_axe_image_shooter": "Placeholder Axe Image Shooter",
+      "item.silver.crystrite_axe": "Crystrite Axe",
       "item.silver.placeholder_sword_image_shooter": "Placeholder Sword Image Shooter",
       "item.silver.end_breaker": "End Breaker",
       "subtitles.ominousdrone": "I can see you... :)",
-      "subtitles.creepygiggle": "giggles",
-      "enchantment.silver.caster_image": "Caster Image",
-      "subtitles.loz_sword_shoot": "Image Fired",
-      "item.silver.pencil_blade": "Pencil Blade",
-      "enchantment.silver.repeating": "Repeating",
-      "item.silver.placeholder_axe_image_shooter": "Placeholder Axe Image Shooter"
+      "subtitles.loz_sword_shoot": "Image Fired"
     }
   },
   "foldersRoot": {

@@ -1,0 +1,24 @@
+{
+  "group": "silver",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "silver:crystrite"
+    },
+    "1": {
+      "item": "silver:crystrite"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "silver:crystrite_sword",
+    "count": 1
+  }
+}

@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Pencil Blade",
     "specialInfo": [
-      "Deals devastating damage when attacking from behind."
+      "§7Deals devastating damage when attacking from behind."
     ],
     "creativeTab": {
       "value": "COMBAT"

@@ -61,7 +61,7 @@ public class PencilBladeItem extends SilverModElements.ModElement {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
-				list.add(new StringTextComponent("Deals devastating damage when attacking from behind."));
+				list.add(new StringTextComponent("\u00A77Deals devastating damage when attacking from behind."));
 			}
 
 			@Override
